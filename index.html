@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>留言板</title>
+  <style>
+    body,
+    html {
+      overflow: hidden;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+
+    }
+
+    body {
+      margin: 20px auto;
+      padding: 0;
+      width: 650px;
+      height: 500px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+
+    }
+
+    #postMessageForm {
+      /* background: red; */
+    }
+
+    #postMessageForm input:nth-child(1),
+    #postMessageForm input:nth-child(2) {
+      background: none;
+      padding: 10px 20px;
+    }
+
+    #postMessageForm input:nth-child(3) {
+      background: deepskyblue;
+      border: 1px solid deepskyblue;
+      padding: 10px 20px;
+    }
+
+    #messageList {
+      height: 400px;
+      /* background: #eee; */
+      margin: 8px auto;
+      padding: 0;
+      list-style: none;
+      overflow: auto;
+    }
+
+    #messageList li {
+      color: deepskyblue;
+      text-align: left;
+      padding: 16px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>留言板</h2>
+  <form id="postMessageForm">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="word" placeholder="Content">
+    <input type="submit" value="Submit">
+  </form>
+  <ol id="messageList">
+
+  </ol>
+
+  <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
